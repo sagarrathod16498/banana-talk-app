@@ -1,8 +1,9 @@
-//input
-var username = prompt("Give me username")
+const btnTaranslate = document.querySelector("#btn-translate");
+const txtInput = document.querySelector("#txt-input");
 
-//processing
-const welcomeMesgage=   console.log("script is working from different file");
+btnTaranslate.addEventListener("click", clickEventHandler);
 
-// output
-alert(welcomeMesgage);
+function clickEventHandler() {
+    console.log("clicked");
+    console.log("Input : " , txtInput.value);
+}
